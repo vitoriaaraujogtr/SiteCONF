@@ -20,6 +20,15 @@ body {
     overflow-x: hidden;
 }
 
+.logo-site {
+    position: absolute; /* Permite mover para qualquer lugar */
+    top: 20px;          /* Distância do topo */
+    left: 20px;         /* Ajuste aqui para colocar mais à esquerda */
+    width: 500px;       /* Ajuste o tamanho para ficar igual ao do design */
+    height: auto;       /* Mantém a proporção */
+    z-index: 100;       /* Garante que ela fique por cima de tudo */
+}
+
 /* --- SEÇÃO HERO TELA CHEIA CORRIGIDA --- */
 .hero-wrapper {
     display: flex;
@@ -247,5 +256,12 @@ footer {
     .location-container { flex-direction: column; }
     .hero-img { 
         max-height: 70vh; /* No celular a imagem tem que ser menor para o botão aparecer */
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-site {
+        width: 120px; /* Diminui a logo em telas pequenas */
+        left: 10px;
     }
 }
