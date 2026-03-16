@@ -158,46 +158,7 @@
         <p>© 2026 Ministério de Jovens Koinonia. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzXdoGYBraU9p4BNeOGncvRviujIZwhCzjqKHlMomHVfSZnpwqIv-QhXWF-WoYqxXKpJw/exec';
-    const form = document.querySelector('form');
-
-    form.addEventListener('submit', e => {
-        e.preventDefault(); // Impede a página de recarregar
-        
-        // Altera o texto do botão para mostrar que está enviando
-        const btn = form.querySelector('button');
-        const originalText = btn.innerText;
-        btn.innerText = "ENVIANDO...";
-        btn.disabled = true;
-
-        // Pega os dados do formulário
-        const formData = {
-            nome: document.getElementById('nome').value,
-            telefone: document.getElementById('telefone').value,
-            membro: document.getElementById('membro').value,
-            ingresso: document.getElementById('ingresso').value
-        };
-
-        // Envia para o Google Sheets
-        fetch(scriptURL, { 
-            method: 'POST', 
-            body: JSON.stringify(formData)
-        })
-        .then(response => {
-            alert('Inscrição realizada com sucesso! Nos vemos na CONF 2K26.');
-            btn.innerText = originalText;
-            btn.disabled = false;
-            form.reset(); // Limpa o formulário
-        })
-        .catch(error => {
-            console.error('Erro!', error.message);
-            alert('Ops, algo deu errado. Tente novamente.');
-            btn.innerText = originalText;
-            btn.disabled = false;
-        });
-    });
-</script>
+    <script src="script.js"></script>
 
 </body>
 </html>
