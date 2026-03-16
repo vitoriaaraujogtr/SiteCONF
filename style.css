@@ -88,6 +88,22 @@ body {
     transform: scale(1.05);
 }
 
+.btn-principal {
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-principal:active {
+    transform: scale(0.95);
+}
+
+.btn-principal:disabled {
+    background-color: #333;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
 /* --- SEÇÃO DO TEMA --- */
 .tema-section {
     padding: 100px 20px;
