@@ -3,162 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONF 2K26</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>CONF 2K26 — Comunidade Koinonia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,800&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="C:\Users\ADMIN\Desktop\site conferência\imagens e logo\05 - LOGO NOVA - COMUNIDADE KOINONIA (white).png" alt="Logo Koinonia" class="logo-site">
 
-    <div class="hero-wrapper">
-        <section class="hero">
-            <img src="C:\Users\ADMIN\Desktop\site conferência\imagens e logo\CONF2K26semlogo.png" alt="Logo Conferência" class="hero-img">
-        </section>
+    <!-- ===================================================
+         NAV
+    =================================================== -->
+    <nav>
+        <div class="nav-logo-placeholder">
+            <!-- 
+                Quando tiver a logo, substitua por:
+                <img src="imagens/logo-koinonia-white.png" alt="Koinonia" class="nav-logo">
+            -->
+            <div class="dot"></div>
+            <span>Koinonia</span>
+        </div>
 
-        <div class="cta-container">
-            <a href="#inscricao" class="btn btn-hero">INSCREVA-SE AQUI</a>
+        <ul>
+            <li><a href="#convidados">Convidados</a></li>
+            <li><a href="#localizacao">Local</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
+        </ul>
+
+        <a href="#inscricao" class="nav-cta">Inscreva-se</a>
+    </nav>
+
+
+    <!-- ===================================================
+         HERO
+    =================================================== -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+
+        <span class="hero-eyebrow">Comunidade Koinonia — Ministério de Jovens</span>
+
+        <!-- 
+            IMAGEM PRINCIPAL DO EVENTO
+            Quando tiver a imagem, substitua o bloco .hero-image-placeholder por:
+            <div class="hero-image-wrapper">
+                <img src="imagens/CONF2K26semlogo.png" alt="CONF 2K26" class="hero-img-real">
+            </div>
+        -->
+        <div class="hero-image-wrapper">
+            <div class="hero-image-placeholder">
+                <div class="conf-title-big">CONF</div>
+                <div class="conf-year">2K26</div>
+                <div class="conf-label">— Coloque aqui a arte do evento —</div>
+            </div>
+        </div>
+
+        <p class="hero-verse">Romanos 12:2</p>
+        <h1 class="hero-tagline">
+            Atualização <span class="accent">necessária:</span><br>
+            nem todo upgrade vem do <span class="accent">sistema</span>
+        </h1>
+
+        <div class="hero-btn-wrap">
+            <a href="#inscricao" class="btn btn-primary">Inscreva-se agora</a>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         MARQUEE 1
+    =================================================== -->
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <span>CONF 2K26</span><span>•</span>
+            <span>Comunidade Koinonia</span><span>•</span>
+            <span>Ministério de Jovens</span><span>•</span>
+            <span>Romanos 12:2</span><span>•</span>
+            <span>CONF 2K26</span><span>•</span>
+            <span>Comunidade Koinonia</span><span>•</span>
+            <span>Ministério de Jovens</span><span>•</span>
+            <span>Romanos 12:2</span><span>•</span>
+            <span>CONF 2K26</span><span>•</span>
+            <span>Comunidade Koinonia</span><span>•</span>
+            <span>Ministério de Jovens</span><span>•</span>
+            <span>Romanos 12:2</span><span>•</span>
         </div>
     </div>
 
-    <section class="tema-section">
-        <div class="tema-container">
-            <p class="referencia">ROMANOS 12:2</p>
-            <h2 class="frase-tema">
-                ATUALIZAÇÃO <span class="destaque">NECESSÁRIA:</span> <br>
-                NEM TODO UPGRADE VEM DO <span class="destaque">SISTEMA</span>
-            </h2>
-        </div>
-    </section>
 
-    <section id="convidados">
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <span>CONVIDADOS</span><span>CONVIDADOS</span><span>CONVIDADOS</span><span>CONVIDADOS</span>
-                <span>CONVIDADOS</span><span>CONVIDADOS</span><span>CONVIDADOS</span><span>CONVIDADOS</span>
+    <!-- ===================================================
+         CONVIDADOS
+    =================================================== -->
+    <section id="convidados" class="speakers-section">
+        <div class="speakers-header">
+            <div>
+                <span class="section-label">Programação</span>
+                <h2 class="section-heading">Convidados <span class="dim">Especiais</span></h2>
             </div>
-            <div class="marquee-content" aria-hidden="true">
-                <span>CONVIDADOS</span><span>CONVIDADOS</span><span>CONVIDADOS</span><span>CONVIDADOS</span>
-                <span>CONVIDADOS</span><span>CONVIDADOS</span><span>CONVIDADOS</span><span>CONVIDADOS</span>
-            </div>
+            <p style="color:var(--gray); max-width:360px; font-size:.9rem; line-height:1.6;">
+                Em breve revelaremos os preletores e bandas que estarão com a gente nessa conferência.
+            </p>
         </div>
 
-        <div class="grid-pessoas">
-            <div class="card">
-                <img src="https://via.placeholder.com/150/1a1a1a/00ff66?text=Foto" alt="Convidado 1">
-                <h3>Preletor/banda</h3>
-                <p class="cargo">Participação Especial</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/150/1a1a1a/00ff66?text=Foto" alt="Convidado 2">
-                <h3>Preletor/banda</h3>
-                <p class="cargo">Participação Especial</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/150/1a1a1a/00ff66?text=Foto" alt="Convidado 3">
-                <h3>Preletor/banda</h3>
-                <p class="cargo">Participação Especial</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/150/1a1a1a/00ff66?text=Foto" alt="Convidado 4">
-                <h3>Preletor/banda</h3>
-                <p class="cargo">Participação Especial</p>
-            </div>
-        </div>
-    </section>
+        <div class="speakers-grid">
+            <!--
+                Para adicionar convidados reais, use este modelo:
 
-    <section id="lideranca">
-        <h2 class="section-title">A Liderança</h2>
-        <div class="grid-pessoas">
-            <div class="card">
-                <img src="C:\Users\ADMIN\Desktop\site conferência\imagens e logo\png lider c.png" alt="Clécia Silva">
-                <h3>Clécia Silva</h3>
-                <p class="cargo">Líder de Jovens</p>
+                <div class="speaker-card">
+                    <img src="imagens/foto-nome.png" alt="Nome" class="speaker-avatar" style="display:block;">
+                    <div>
+                        <div class="speaker-name">Nome Completo</div>
+                        <div class="speaker-role">Preletor Principal</div>
+                    </div>
+                    <p class="speaker-desc">Breve bio opcional do convidado.</p>
+                </div>
+            -->
+
+            <div class="speaker-card speaker-tba">
+                <div class="speaker-avatar">?</div>
+                <div>
+                    <div class="speaker-name">Em breve</div>
+                    <div class="speaker-role">Preletor / Banda</div>
+                </div>
             </div>
-            <div class="card">
-                <img src="C:\Users\ADMIN\Desktop\site conferência\imagens e logo\png bruna.png" alt="Bruna Xavier">
-                <h3>Bruna Xavier</h3>
-                <p class="cargo">Líder de Jovens</p>
+            <div class="speaker-card speaker-tba">
+                <div class="speaker-avatar">?</div>
+                <div>
+                    <div class="speaker-name">Em breve</div>
+                    <div class="speaker-role">Preletor / Banda</div>
+                </div>
             </div>
-            <div class="card">
-                <img src="C:\Users\ADMIN\Desktop\site conferência\imagens e logo\png pedro.png" alt="Pedro Henrique">
-                <h3>Pedro Henrique</h3>
-                <p class="cargo">Líder de Jovens</p>
+            <div class="speaker-card speaker-tba">
+                <div class="speaker-avatar">?</div>
+                <div>
+                    <div class="speaker-name">Em breve</div>
+                    <div class="speaker-role">Preletor / Banda</div>
+                </div>
+            </div>
+            <div class="speaker-card speaker-tba">
+                <div class="speaker-avatar">?</div>
+                <div>
+                    <div class="speaker-name">Em breve</div>
+                    <div class="speaker-role">Preletor / Banda</div>
+                </div>
             </div>
         </div>
     </section>
 
+
+    <!-- ===================================================
+         MARQUEE 2 (invertido/acento)
+    =================================================== -->
+    <div class="marquee-wrap accent">
+        <div class="marquee-track">
+            <span>Inscrições Abertas</span><span>✦</span>
+            <span>Garanta sua vaga</span><span>✦</span>
+            <span>Inscrições Abertas</span><span>✦</span>
+            <span>Garanta sua vaga</span><span>✦</span>
+            <span>Inscrições Abertas</span><span>✦</span>
+            <span>Garanta sua vaga</span><span>✦</span>
+            <span>Inscrições Abertas</span><span>✦</span>
+            <span>Garanta sua vaga</span><span>✦</span>
+        </div>
+    </div>
+
+
+    <!-- ===================================================
+         FORMULÁRIO
+    =================================================== -->
+    <section id="inscricao" class="form-section">
+        <div style="max-width:1100px; margin:0 auto;">
+            <span class="section-label">Participe</span>
+            <h2 class="section-heading">Inscreva-se <span class="dim">Agora</span></h2>
+        </div>
+
+        <div class="form-inner">
+            <div class="form-left">
+                <p>
+                    A CONF 2K26 é uma conferência de jovens da Comunidade Koinonia. Garanta sua inscrição e venha fazer parte desse momento transformador.
+                </p>
+
+                <div class="form-pills" style="margin-top: 32px;">
+                    <div class="pill"><div class="pill-dot"></div> Entrada no Evento</div>
+                    <div class="pill"><div class="pill-dot"></div> Camiseta Exclusiva</div>
+                    <div class="pill"><div class="pill-dot"></div> Experiência Única</div>
+                </div>
+
+                <!-- 
+                    SEÇÃO DE LIDERANÇA
+                    Substitua os placeholders pelas imagens reais quando disponíveis.
+                -->
+                <div style="margin-top: 48px;">
+                    <span class="section-label" style="margin-bottom:20px; display:block;">A Liderança</span>
+                    <div style="display:flex; gap:16px; flex-wrap:wrap;">
+
+                        <div style="display:flex; align-items:center; gap:12px;">
+                            <!--
+                                Substitua por:
+                                <img src="imagens/png lider c.png" alt="Clécia Silva" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--border);">
+                            -->
+                            <div style="width:48px;height:48px;border-radius:50%;background:var(--card);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--font-cond);font-weight:800;color:var(--green);font-size:.9rem;">CS</div>
+                            <div>
+                                <div style="font-family:var(--font-cond);font-weight:700;font-size:.9rem;">Clécia Silva</div>
+                                <div style="font-size:.75rem;color:var(--gray);">Líder de Jovens</div>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:12px;">
+                            <!--
+                                Substitua por:
+                                <img src="imagens/png bruna.png" alt="Bruna Xavier" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--border);">
+                            -->
+                            <div style="width:48px;height:48px;border-radius:50%;background:var(--card);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--font-cond);font-weight:800;color:var(--green);font-size:.9rem;">BX</div>
+                            <div>
+                                <div style="font-family:var(--font-cond);font-weight:700;font-size:.9rem;">Bruna Xavier</div>
+                                <div style="font-size:.75rem;color:var(--gray);">Líder de Jovens</div>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:12px;">
+                            <!--
+                                Substitua por:
+                                <img src="imagens/png pedro.png" alt="Pedro Henrique" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--border);">
+                            -->
+                            <div style="width:48px;height:48px;border-radius:50%;background:var(--card);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--font-cond);font-weight:800;color:var(--green);font-size:.9rem;">PH</div>
+                            <div>
+                                <div style="font-family:var(--font-cond);font-weight:700;font-size:.9rem;">Pedro Henrique</div>
+                                <div style="font-size:.75rem;color:var(--gray);">Líder de Jovens</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-right">
+                <form action="processar.php" method="POST">
+
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membro">Você é membro da nossa igreja?</label>
+                        <select id="membro" name="membro" required>
+                            <option value="">Selecione...</option>
+                            <option value="sim">Sim, sou membro</option>
+                            <option value="nao">Não, sou visitante</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo de Inscrição</label>
+                        <div class="ticket-options">
+
+                            <label class="ticket-option">
+                                <input type="radio" name="ingresso" value="normal" required>
+                                <div class="ticket-name">Normal</div>
+                                <div class="ticket-sub">Entrada no evento</div>
+                            </label>
+
+                            <label class="ticket-option">
+                                <input type="radio" name="ingresso" value="premium">
+                                <div class="ticket-name">Premium</div>
+                                <div class="ticket-sub">Entrada + camiseta</div>
+                                <span class="ticket-badge">Exclusivo</span>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">Confirmar Inscrição</button>
+                    <p class="form-note">Ao se inscrever, você concorda com os termos do evento.</p>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         LOCALIZAÇÃO
+    =================================================== -->
     <section id="localizacao" class="location-section">
-        <div class="marquee-container" style="transform: rotate(1deg); background-color: #1a1a1a; border: 1px solid var(--green-neon);">
-            <div class="marquee-content">
-                <span style="color: var(--green-neon);">ONDE ESTAREMOS</span>
-                <span style="color: var(--green-neon);">ONDE ESTAREMOS</span>
-                <span style="color: var(--green-neon);">ONDE ESTAREMOS</span>
-            </div>
-        </div>
+        <span class="section-label">Onde estaremos</span>
+        <h2 class="section-heading">Local <span class="dim">do Evento</span></h2>
 
-        <div class="location-container">
+        <div class="location-inner">
             <div class="location-info">
-                <h2 class="section-title" style="text-align: left; margin: 0 0 20px 0;">Comunidade <span style="color: var(--text-light);">Evangélica Koinonia</span></h2>
-                <p>Preparamos um lugar incrível para te receber.</p>
-                <p style="margin-top: 15px; font-weight: 600; color: var(--text-light);">Endereço da Conferência:</p>
-                <p>Clique no botão abaixo para abrir a rota direta no seu GPS.</p>
-                
-                <a href="https://maps.app.goo.gl/Q4dMaUkyrExWY2Pd7" target="_blank" class="btn" style="display: inline-block; margin-top: 25px; font-size: 1rem;">
-                    ABRIR NO GOOGLE MAPS
+                <p>Preparamos um lugar incrível para te receber. A conferência será realizada na Comunidade Evangélica Koinonia.</p>
+
+                <div class="address-block">
+                    <p class="address-label">Endereço</p>
+                    <p>Comunidade Koinonia<br>Clique no mapa ou no botão para ver a rota completa.</p>
+                </div>
+
+                <a href="https://maps.app.goo.gl/Q4dMaUkyrExWY2Pd7" target="_blank" class="btn btn-outline" style="margin-top: 28px;">
+                    Abrir no Google Maps
                 </a>
             </div>
 
             <div class="map-box">
-                <iframe 
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.7077002742813!2d-48.091317!3d-15.819359299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcd007417b0b7%3A0xaa81ff775b170e1d!2sComunidade%20Koinonia%20-%20Uma%20fam%C3%ADlia%20para%20pertencer!5e0!3m2!1spt-BR!2sbr!4v1772901151920!5m2!1spt-BR!2sbr" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.7077002742813!2d-48.091317!3d-15.819359299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcd007417b0b7%3A0xaa81ff775b170e1d!2sComunidade%20Koinonia%20-%20Uma%20fam%C3%ADlia%20para%20pertencer!5e0!3m2!1spt-BR!2sbr!4v1772901151920!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </section>
 
-    <section id="inscricao" class="form-section">
-        <form action="processar.php" method="POST"></form>
-        <h2 class="section-title">Inscreva-se Agora</h2>
-        <div class="form-container">
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="nome">Nome Completo</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                </div>
 
-                <div class="form-group">
-                    <label for="telefone">Telefone / WhatsApp</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="membro">Você é membro da nossa igreja?</label>
-                    <select id="membro" name="membro" required>
-                        <option value="">Selecione...</option>
-                        <option value="sim">Sim, sou membro</option>
-                        <option value="nao">Não, sou visitante</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="ingresso">Tipo de Inscrição</label>
-                    <select id="ingresso" name="ingresso" required>
-                        <option value="">Selecione o tipo...</option>
-                        <option value="normal">Inscrição Normal (Entrada no evento)</option>
-                        <option value="premium">Inscrição Premium (Entrada + Camiseta Exclusiva)</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="btn" style="width: 100%; margin-top: 20px;">Confirmar Inscrição</button>
-            </form>
-        </div>
-    </section>
-
+    <!-- ===================================================
+         FOOTER
+    =================================================== -->
     <footer>
         <p>© 2026 Ministério de Jovens Koinonia. Todos os direitos reservados.</p>
+        <div class="footer-dot"></div>
+        <p>CONF 2K26</p>
     </footer>
-
-    <script src="script.js"></script>
 
 </body>
 </html>

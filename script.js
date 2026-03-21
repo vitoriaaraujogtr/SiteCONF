@@ -1,5 +1,5 @@
 // Substitua pela URL que você acabou de copiar
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzXdoGYBraU9p4BNeOGncvRviujIZwhCzjqKHlMomHVfSZnpwqIv-QhXWF-WoYqxXKpJw/exec'; 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyS_Y5wna8JE76XjMbCXyAWmJsyGmcpdqEexkViHUqL/dev'; 
 const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
@@ -15,10 +15,10 @@ form.addEventListener('submit', e => {
     // Captura os dados exatamente como estão no HTML
     const formData = new FormData(form);
     const data = {
-        nome: document.getElementById('nome').value,
-        telefone: document.getElementById('telefone').value,
-        membro: document.getElementById('membro').value,
-        ingresso: document.getElementById('ingresso').value
+        nome: document.getElementById('NOME').value,
+        telefone: document.getElementById('TELEFONE').value,
+        membro: document.getElementById('MEMBRO').value,
+        ingresso: document.getElementById('INGRESSO').value
     };
 
     // Envio para o Google Sheets
