@@ -201,21 +201,7 @@ nav ul a:hover { color: var(--green); }
     font-size: .8rem;
 }
 
-.hero-image-placeholder .conf-title-big {
-    font-family: var(--font-display);
-    font-size: clamp(5rem, 15vw, 13rem);
-    color: var(--white);
-    line-height: 1;
-    letter-spacing: 4px;
-}
 
-.hero-image-placeholder .conf-year {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 6vw, 5rem);
-    color: var(--green);
-    text-shadow: 0 0 30px rgba(0,255,127,.6);
-    letter-spacing: 8px;
-}
 
 .hero-image-placeholder .conf-label {
     font-size: .75rem;
