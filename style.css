@@ -714,7 +714,14 @@ footer .footer-dot {
    RESPONSIVIDADE
 ============================================================ */
 @media (max-width: 900px) {
-    nav ul { display: none; }
+
+    .nav-logo-placeholder img {
+        height: 55px;
+    }
+
+    nav ul {
+        display: none;
+    }
 
     .form-inner,
     .location-inner {
